@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
 </head>
 <body>
-    <h1>Welcome to PetFax</h1>
-    <p>Our cute and cuddly pets are looking for a loving home.</p>
-    {% for pet in pets %}
-        <h2>{{pet.pet_name}}</h2>
-        <a href="/pets/{{pet.pet_id}}">View More Info</a><br><br>
-        <img src="{{pet.pet_photo}}" alt="Photo of {{pet.petname}}">
+    <div>
+        <h1>Add a Fun Fact for {{pet.pet_name}}</h1>
         
-    {% endfor %}
+        
+        
+        <a href="/pets" ><button class="back"type="button">Back to Adoptable Pets</button></a><br>
+      
+
+    </div>    
 </body>
 </html>
