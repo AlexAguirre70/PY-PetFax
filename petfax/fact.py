@@ -1,4 +1,4 @@
-from flask import (Blueprint, render_template)
+from flask import (Blueprint, render_template,request)
 
 
 bp=Blueprint('fact',__name__,url_prefix='/facts')
@@ -6,4 +6,5 @@ bp=Blueprint('fact',__name__,url_prefix='/facts')
 #new fact form route
 @bp.route('/new')
 def index():
-    return render_template('new.html')
+    print (request)
+    return render_template('facts/new.html')
