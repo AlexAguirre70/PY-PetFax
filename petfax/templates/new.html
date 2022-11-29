@@ -10,12 +10,22 @@
 <body>
     <div>
         <h1>Add a Fun Fact for {{pet.pet_name}}</h1>
-        
-        
-        
+        <form action="#" method="POST" name="fun_fact"> 
+         <div class="container">
+            <div>    
+                <input type="hidden" name="petId" id="petId" value="{{pet.pet_id}}"><br>
+                <label for="petFact">What is your fun Fact:</label><br>
+                <textarea name="petFact" id="petFact" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+            <label for="author">Your Name:</label><br>
+            <input type="text" name="author" id="author" value="">
+            </div>
+            <input type="submit" class="newFact" value="Submit Fun Fact">  
+          </div>
+            
+        </form>   
         <a href="/pets" ><button class="back"type="button">Back to Adoptable Pets</button></a><br>
-      
-
     </div>    
 </body>
 </html>

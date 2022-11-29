@@ -42,3 +42,11 @@ div,p {
     border-radius: 10px;
     width: 175px;
 }
+.container {
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+label {
+    padding-bottom: 10px;
+}
