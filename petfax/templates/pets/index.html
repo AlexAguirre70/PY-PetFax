@@ -10,11 +10,15 @@
 <body>
     <h1>Welcome to PetFax</h1>
     <p>Our cute and cuddly pets are looking for a loving home.</p>
+    <a href="../facts/new" ><button class="newFact" type="button">Add a Fun Fact</button></a>
+    <a href="../facts" ><button class="view" type="button">View Fun Facts</button></a><br>
+    
     {% for pet in pets %}
         <h2>{{pet.pet_name}}</h2>
         <a href="/pets/{{pet.pet_id}}">View More Info</a><br><br>
-        <img src="{{pet.pet_photo}}" alt="Photo of {{pet.petname}}">
+        <img src="{{pet.pet_photo}}" class="main-img" alt="Photo of {{pet.petname}}">
         
     {% endfor %}
+
 </body>
 </html>

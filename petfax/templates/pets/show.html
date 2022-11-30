@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
 </head>
 <body>
-    <div>
+    <div class="main">
         <h1>Detail Info for {{pet.pet_name}}</h1>
         <p>{{pet.pet_fact}}</p>    
-        <img style="width:300px; height:400px;" src="{{pet.pet_photo}}" alt="Photo of {{pet.petname}}"><br>
-        <a href="../facts/new" ><button class="newFact" type="button">Add a Fun Fact</button></a><br>
+        <img src="{{pet.pet_photo}}" class="detail-img" alt="Photo of {{pet.petname}}"><br>
+        <a href="../facts/new" ><button class="newFact" type="button">Add a Fun Fact</button></a>        
+        <a href="../facts" ><button class="view" type="button">View Fun Facts</button></a><br>
         <a href="/pets" ><button class="back"type="button">Back to Adoptable Pets</button></a><br>
-      
-
     </div>    
 </body>
 </html>

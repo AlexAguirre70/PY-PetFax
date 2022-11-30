@@ -9,8 +9,15 @@
 </head>
 <body>
     <div>
-        <h1>Fun Animal Fax</h1>
-        
+        <h1>UserFax</h1>
+        {% for fact in facts %}
+            <div class="container">
+                <p><strong>Did you know:</strong><br>
+                {{fact.fact}}</p>
+               <h5>Submitted by: {{fact.submitter}}</h5> 
+            </div>
+        {% endfor %}
+        <a href="../facts/new" ><button class="newFact" type="button">Add a Fun Fact</button></a><br>
         <a href="/pets" ><button class="back"type="button">Back to Adoptable Pets</button></a><br>
     </div>    
 </body>
